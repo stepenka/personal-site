@@ -1,0 +1,69 @@
+:root {
+  --dark-color: oklch(0.17 0 0);
+  --accent-color: #505050c9;
+  --solid-color: #161616ce;
+  --retro-gray: #bbbbbb;
+  --retro-blue: #000085;
+  --retro-text: #001f3f;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-family: "Orbit", sans-serif;
+  color: white;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.menuButton::after,
+.menuButton::before {
+  content: "";
+  position: absolute;
+  width: 57%;
+  height: 2px;
+  background: #ffffff;
+  bottom: -5px;
+  left: 35px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.menuButton::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.menuButton:hover::after,
+.menuButton:hover::before {
+  transform: scaleX(1);
+}

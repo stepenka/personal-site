@@ -1,0 +1,70 @@
+div .links {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 512px;
+  background: var(--solid-color);
+  border-width: 0px 4px 4px 4px;
+  border-radius: 20px 0px 20px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 20px;
+}
+
+div .links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 50px;
+}
+
+div .links ul li a,
+a.logo {
+  color: #ffffff;
+  font-family: "Orbit", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+div .links ul li a img {
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+}
+
+/* div .links ul li:hover {
+  animation: shake 0.4s ease-out;
+} */
+
+/* @keyframes shake {
+  0% {
+    transform: skewX(-10deg);
+  }
+
+  25% {
+    transform: skewX(10deg);
+  }
+
+  50% {
+    transform: skewX(-10deg);
+  }
+
+  75% {
+    transform: skewX(10deg);
+  }
+
+  100% {
+    transform: skewX(-10deg);
+  }
+} */
+
+ul li a .icon {
+  transition: 0.5s;
+}
+
+ul li a:hover .icon {
+  transform: rotateY(180deg);
+}

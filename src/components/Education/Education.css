@@ -1,0 +1,91 @@
+.education {
+  position: relative;
+  width: 100%;
+  height: 81%;
+  margin: 10px 0px;
+  text-align: center;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 20px 0px 20px 0px;
+  background: var(--solid-color);
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.educationContainer {
+  position: relative;
+  width: 99%;
+  height: 87%;
+  border-width: 5px;
+  border-style: groove;
+  border-color: var(--retro-gray);
+  background: var(--retro-blue);
+  padding: 0px 20px 5px 20px;
+  margin: 0px 5px 10px;
+}
+
+.menuButtonEducation {
+  text-align: left;
+  border: none;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  font-size: 18px;
+  padding: 0px 0px 0px 10px;
+}
+
+.menuButtonEducation img {
+  height: 20px;
+  width: 20px;
+  vertical-align: text-top;
+}
+
+.educationTop {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.school {
+  position: relative;
+  padding: 10px 0px 0px 0px;
+  text-align: left;
+}
+
+.school h2 {
+  color: #107fb7;
+  font-family: "Metric", sans-serif;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.school p img {
+  height: 10px;
+  width: 10px;
+}
+
+.coursework {
+  padding: 10px 0px 10px 0px;
+}
+
+.lmu {
+  position: relative;
+  height: min-content;
+}
+
+.lmuPic {
+  height: 120px;
+}
+
+.courseworkGrid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(8, minmax(0, 1fr));
+  grid-gap: 15px;
+  grid-auto-flow: row;
+}
