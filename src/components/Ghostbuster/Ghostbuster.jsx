@@ -1,6 +1,6 @@
 import React from "react";
 import "./Ghostbuster.css";
-import { xout, ghost2 } from "../../assets";
+import { xout, ghost } from "../../assets";
 
 const Ghostbuster = (props) => {
   return (
@@ -19,7 +19,7 @@ const Ghostbuster = (props) => {
             target="_blank"
           >
             <h2>Ghost Buster</h2>
-            <img className="ghostDisplay" src={ghost2}></img>
+            <img className="ghostDisplay" src={ghost}></img>
           </a>
           <p className="ghostBlurb">
             Pacman AI agent that hunts ghosts utilizing inference and particle
