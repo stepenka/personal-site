@@ -15,7 +15,7 @@ const Ghostbuster = (props) => {
         <div className="ghostScreen">
           <a
             className="ghostTop"
-            href="https://www.figma.com/design/eyNV3DrwO4WFlMcNg4R86b/Footble?m=auto&t=7YX6HG5woLGdp9KS-6"
+            href="https://github.com/stepenka/ghost-buster"
             target="_blank"
           >
             <h2>Ghost Buster</h2>

@@ -6,7 +6,7 @@ import jurgis from "./jurgis.jpg";
 import electricScript from "./electric.png";
 import mySampleSize2 from "./mysamplesize2.png";
 import footble2 from "./footble2.png";
-import ghost from "./ghost.png";
+import ghost from "./ghost.gif";
 import back from "./back.png";
 import resumePic from "./resume.png";
 import ping from "./ping.png";
