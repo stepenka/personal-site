@@ -31,6 +31,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  height: max-content;
 }
 
 .imageBox {
@@ -135,4 +136,62 @@
 .resumeButton img {
   height: 70px;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1200px) {
+  .menuContainer {
+    height: 84%;
+  }
+
+  .menuText {
+    padding: 0px;
+    width: 70%;
+  }
+
+  .menuText h1 {
+    font-size: 24px;
+  }
+
+  .menuText p {
+    font-size: 8px;
+  }
+
+  .menuTop {
+    width: 100%;
+  }
+
+  .menuGrid {
+    margin: 5px 0px;
+  }
+
+  .imageBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+  }
+
+  .jurgis {
+    position: absolute;
+    top: 0;
+    right: 0;
+    vertical-align: middle;
+    width: 50%;
+    clip-path: circle();
+    vertical-align: middle;
+  }
+
+  .location {
+    height: 12px;
+    width: 12px;
+  }
+
+  .menuGrid {
+    height: 81%;
+  }
+
+  .menuGrid button {
+    font-size: 16px;
+  }
 }

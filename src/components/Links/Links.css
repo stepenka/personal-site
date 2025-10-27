@@ -68,3 +68,29 @@ ul li a .icon {
 ul li a:hover .icon {
   transform: rotateY(180deg);
 }
+
+@media screen and (max-width: 1200px) {
+  div .links {
+    width: 58%;
+    padding: 10px;
+    height: 104px;
+  }
+
+  div .links ul li a,
+  a.logo {
+    font-size: 12px;
+  }
+
+  div .links ul li a img {
+    height: 40px;
+    width: 40px;
+  }
+
+  div .links ul {
+    gap: 10px;
+  }
+
+  div .links li {
+    text-align: center;
+  }
+}

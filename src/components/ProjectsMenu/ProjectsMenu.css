@@ -53,3 +53,17 @@
   color: #001f3f;
   background-color: var(--retro-gray);
 }
+
+@media screen and (max-width: 1200px) {
+  .menuGridProjects {
+    margin: 0px;
+  }
+
+  .menuContainerProjects {
+    height: 90%;
+  }
+
+  .menuGridProjects button {
+    font-size: 12px;
+  }
+}

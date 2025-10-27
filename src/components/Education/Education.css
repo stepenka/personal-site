@@ -89,3 +89,37 @@
   grid-gap: 15px;
   grid-auto-flow: row;
 }
+
+@media screen and (max-width: 1200px) {
+  .education {
+    height: 84%;
+  }
+
+  .educationContainer {
+    height: 90%;
+  }
+
+  .school h2 {
+    font-size: 20px;
+  }
+
+  .school h3 {
+    font-size: 14px;
+  }
+
+  .school h4 {
+    font-size: 12px;
+  }
+
+  .school p {
+    font-size: 10px;
+  }
+
+  .coursework h2 {
+    font-size: 20px;
+  }
+
+  .courseworkGrid p {
+    font-size: 12px;
+  }
+}

@@ -106,3 +106,16 @@
 .ghostTypes p {
   color: #494747;
 }
+
+@media screen and (max-width: 1200px) {
+  .ghostContainer {
+    height: 100%;
+  }
+
+  .ghostTop {
+    width: 92%;
+  }
+  .ghost {
+    width: 99%;
+  }
+}

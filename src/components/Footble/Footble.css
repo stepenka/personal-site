@@ -113,3 +113,25 @@
 .footbleTypes p {
   color: #494747;
 }
+
+@media screen and (max-width: 1200px) {
+  .footbleContainer {
+    height: 100%;
+  }
+
+  .foobleTop {
+    width: 92%;
+  }
+  .footble {
+    width: 99%;
+  }
+
+  .footbleDisplay {
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .footbleScreen {
+    width: 95%;
+  }
+}

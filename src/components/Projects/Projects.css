@@ -43,3 +43,9 @@ div .container .section h2 {
 div .container h1 {
   text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+  div .container {
+    height: 84%;
+  }
+}

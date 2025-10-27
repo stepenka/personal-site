@@ -134,3 +134,21 @@
 .sampleTypes p {
   color: #494747;
 }
+
+@media screen and (max-width: 1200px) {
+  .sampleContainer {
+    height: 100%;
+  }
+
+  .sampleTop {
+    width: 92%;
+  }
+  .sample {
+    width: 99%;
+  }
+
+  .sampleDisplay {
+    object-fit: cover;
+    object-position: left;
+  }
+}
