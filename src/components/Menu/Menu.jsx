@@ -7,7 +7,7 @@ const Menu = (props) => {
     <div className="relative h-full w-full min-h-0 bg-(--retro-gray) border-4 border-[#bbb] groove grid grid-flow-col grid-cols-1 grid-rows-[auto_1fr] lg:grid-rows-[35%_auto]">
       <div className="relative grid grid-flow-col grid-cols-[60%_auto] grid-rows-1">
         <div className="relative p-[10px]">
-          <div className="bg-[#666666] span-shadow">
+          <div className="h-full w-full bg-[#666666] span-shadow">
             <h1 className="roboto lg:text-2xl text-xl leading-none text-center">
               Hi, I'm Jurgis
             </h1>
@@ -15,7 +15,8 @@ const Menu = (props) => {
               I'm a Computer Science graduate from Venezuela and Lithuania.
               <br></br>I specialize at Java and Python, but also enjoy web
               development with ReactJS and Flask.
-              <br></br>You can navigate my website below to get to know me better.
+              <br></br>You can navigate my website below to get to know me
+              better.
               <br></br>
               <img
                 className="h-[12px] w-[12]px inline-block"
