@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --dark-color: oklch(0.17 0 0);
   --accent-color: #505050c9;
@@ -7,12 +9,14 @@
   --retro-text: #001f3f;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 body {
@@ -23,11 +27,7 @@ body {
 h1 {
   font-family: "Orbit", sans-serif;
   color: white;
-}
-
-.wrapper {
-  max-width: 1024px;
-  margin: 0 auto;
+  padding: 10px;
 }
 
 a {
@@ -44,26 +44,32 @@ a {
   }
 }
 
-.menuButton::after,
-.menuButton::before {
-  content: "";
-  position: absolute;
-  width: 57%;
-  height: 2px;
-  background: #ffffff;
-  bottom: -5px;
-  left: 35px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease-out;
+.lmu {
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
 }
 
-.menuButton::before {
-  top: -5px;
-  transform-origin: left;
+.clip-circle {
+  clip-path: circle();
 }
 
-.menuButton:hover::after,
-.menuButton:hover::before {
-  transform: scaleX(1);
+.roboto {
+  font-family: "Roboto", "sans-serif";
+}
+
+.game {
+  font-family: "Press Start 2P", system-ui;
+}
+
+.groove {
+  border-style: groove;
+}
+
+.grid-projects {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.span-shadow {
+  box-shadow: inset -2px -2px #dfdfdf, inset 2px 2px grey;
 }

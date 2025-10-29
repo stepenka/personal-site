@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Projects.css";
-import { back } from "../../assets";
 import Sample from "../Sample/Sample";
 import ProjectsMenu from "../ProjectsMenu/ProjectsMenu";
 import Electric from "../Electric/Electric";
@@ -11,29 +10,35 @@ const Projects = (props) => {
   const [project, setProject] = useState("menu");
 
   return (
-    <div className="container">
+    <div className="relative h-full w-full min-h-0 bg-(--retro-gray) border-4 border-(--retro-gray) groove">
       <button
-        className="menuButtonProjects menuButton"
+        className="text-lg absolute p-[5px] border-[5px] border-[#bbb] groove my-[5px] z-1 duration-[0.3s] bg-(--retro-gray) text-[#000] hover:scale-[80%] hover:shadow-[5px_5px_#666666]"
         onClick={() => props.setPage("menu")}
       >
-        <img src={back}></img> Back
+        Back
       </button>
-      <h1>Projects</h1>
-      {project === "menu" && (
-        <ProjectsMenu project={project} setProject={setProject} />
-      )}
-      {project === "sample" && (
-        <Sample project={project} setProject={setProject} />
-      )}
-      {project === "electric" && (
-        <Electric project={project} setProject={setProject} />
-      )}
-      {project === "ghost" && (
-        <Ghostbuster project={project} setProject={setProject} />
-      )}
-      {project === "footble" && (
-        <Footble project={project} setProject={setProject} />
-      )}
+      <div className="relative h-full w-full grid grid-flow-row grid-rows-[auto_1fr] grid-cols-1">
+        <h1 className="text-3xl text-center game m-auto bg-[#666666] span-shadow">
+          Projects
+        </h1>
+        <div className="relative p-[10px] pt-[0px] min-h-0 min-w-0">
+          {project === "menu" && (
+            <ProjectsMenu project={project} setProject={setProject} />
+          )}
+          {project === "sample" && (
+            <Sample project={project} setProject={setProject} />
+          )}
+          {project === "electric" && (
+            <Electric project={project} setProject={setProject} />
+          )}
+          {project === "ghost" && (
+            <Ghostbuster project={project} setProject={setProject} />
+          )}
+          {project === "footble" && (
+            <Footble project={project} setProject={setProject} />
+          )}
+        </div>
+      </div>
     </div>
   );
 };

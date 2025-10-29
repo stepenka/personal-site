@@ -7,7 +7,6 @@ import electricScript from "./electric.png";
 import mySampleSize2 from "./mysamplesize2.png";
 import footble2 from "./footble2.png";
 import ghost from "./ghost.gif";
-import back from "./back.png";
 import resumePic from "./resume.png";
 import ping from "./ping.png";
 import lmu from "./lmu.png";
@@ -28,7 +27,6 @@ export {
   mySampleSize2,
   footble2,
   ghost,
-  back,
   resumePic,
   ping,
   lmu,

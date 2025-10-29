@@ -1,79 +1,9 @@
 header {
-  min-height: 100vh;
-  width: 100%;
-  /* background: var(--dark-color); */
   background-color: #000000;
-  opacity: 1;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #000000 15px
-    ),
-    repeating-linear-gradient(#53535a55, #53535a);
-  /* background-size: cover;
-  background-position: center; */
+opacity: 1;
+background-image:  linear-gradient(30deg, #666666 12%, transparent 12.5%, transparent 87%, #666666 87.5%, #666666), linear-gradient(150deg, #666666 12%, transparent 12.5%, transparent 87%, #666666 87.5%, #666666), linear-gradient(30deg, #666666 12%, transparent 12.5%, transparent 87%, #666666 87.5%, #666666), linear-gradient(150deg, #666666 12%, transparent 12.5%, transparent 87%, #666666 87.5%, #666666), linear-gradient(60deg, #66666677 25%, transparent 25.5%, transparent 75%, #66666677 75%, #66666677), linear-gradient(60deg, #66666677 25%, transparent 25.5%, transparent 75%, #66666677 75%, #66666677);
+background-size: 52px 91px;
+background-position: 0 0, 0 0, 26px 46px, 26px 46px, 0 0, 26px 46px;
 }
 
-header .wrapper {
-  position: relative;
-  height: 100vh;
-  padding: 0px;
-}
 
-header .cta {
-  position: relative;
-  background: var(--solid-color);
-  height: 104px;
-  width: 450px;
-  border-width: 0px 4px 4px 4px;
-  border-style: solid;
-  border-color: #ffffff;
-  border-radius: 0px 20px 0px 20px;
-  padding: 5px 20px;
-}
-
-header .cta .name {
-  position: relative;
-  padding: 10px 10px 10px 10px;
-}
-
-header .cta .name::after {
-  content: "";
-  position: absolute;
-  width: 90px;
-  height: 4px;
-  background: linear-gradient(
-    to right,
-    #fd004c,
-    #fe9000,
-    #fff020,
-    #3edf4b,
-    #3363ff,
-    #b102b7
-  );
-  background-size: 200% 100%;
-  left: 10px;
-  bottom: 0;
-  margin: 0px;
-  transition: 1.5s;
-}
-
-header .cta .name:hover::after {
-  background-position: 100% 0;
-}
-
-@media screen and (max-width: 1200px) {
-  header .cta {
-    width: 40%;
-    padding: 10px;
-  }
-
-  header .cta .name {
-    font-size: 24px;
-    padding: 0px;
-  }
-
-  header .cta .name::after {
-    bottom: -10px;
-  }
-}
